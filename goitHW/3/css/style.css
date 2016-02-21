@@ -57,6 +57,7 @@
 	}
 	.side_bar a:hover{
 		padding: 10px 110px 10px 60px;
+		background: #e9e9e9;
 		color: #505050;
 	}
 	.content_img {
@@ -74,9 +75,14 @@
 		font-weight: bold;
 		font-size: 15px;
 	}
+	.main:after{
+		content: "";
+		clear: both;
+		display: block;
+	}
 	div.bottom_bar {
+		float: left;
 		background: #d0d0d0;
-		margin-top: 720px;
 		padding: 13px 0px;
 	}
 	div.bottom_bar a{
@@ -91,15 +97,19 @@
 	div.bottom_bar a:hover{
 		text-decoration: underline;
 	}
-	.letter {
+	.copyright {
+		margin: 0;
+		float: right;
 		color: #7c7c7c;
+		background: #d0d0d0;
 		font-family: arial;
 		font-weight: bold;
 		font-size: 15px;
+		padding: 13px 20px 13px 0px;
 	}
-	.flags {
-		float: right;
-		list-style: none;
-		padding: 5px;
-		margin: 5px;
+	.bottom_fon {
+		width: 100%;
+		background: #d0d0d0;
+		height: 0px;
+		padding: 23px 0px 23px 0px;
 	}
