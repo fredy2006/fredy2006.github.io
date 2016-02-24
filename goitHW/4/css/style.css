@@ -35,33 +35,36 @@
 		text-decoration: none;
 		color: #5fa5bb;
 	}
-	.flag_menu {
-		float:right;
-		text-align: right;
-		padding-top: 10px;
-	}
-	.flag_menu a{
-	padding-left: 4px;
-	padding-right: 4px;
-	}
-	.flag_menu_clearfix:after{
-		content:"";
+	.contact:after{
+		content: "";
 		clear: right;
 		display: block;
 	}
-	.country_menu {
-		float:right;
+
+	.int_menu li{
+		float: right;
+		list-style: none;
+		height: 25px;
+		padding: 42px 8px 0px 8px;
+		background-position: center top;
+		background-repeat: no-repeat;
+		font-family: arial;
+		font-weight: bold;
 		font-size: 10px;
-		text-align: center; 
+		margin: 15px 0px 0px 5px;
 	}
-	.country_menu a{
-		float:right;
-		width: 53px;
+	
+	.int_menu li:nth-child(1), .int_menu li:nth-child(2){
+		margin: 15px 0px 0px 0px;
+		padding: 42px 1px 0px 3px;
+		font-size: 10px;
+	}
+	.int_menu a{
 		color: #5fa5bb;
-	}
-	.right_elem {
-	}
-	.country_menu_clearfix:after{
+		text-decoration: none;
+	}	
+	
+	.int_menu:after{
 		content:"";
 		clear: both;
 		display: block;
@@ -79,7 +82,7 @@
 		width: 100%;
 	}
 	.main_menu {
-		background-color: black;
+		background-color: #333333;
 		height: 30px;
 		margin-top: -5px;
 		position: relative;
@@ -100,7 +103,7 @@
 	}
 	.main_menu li ul{
 		display: none;
-		background: black;
+		background: #303030;
 		text-align: left;
 		position: absolute;
 		width: 140px;
@@ -116,7 +119,7 @@
 		list-style: none;
 	}
 	ul li:hover ul {
-	display: block; /* при наведении на пункт меню первого уровня, показывем подменю */
+		display: block; 
 	}	
 	h2 {
 		padding-top: 10px;
