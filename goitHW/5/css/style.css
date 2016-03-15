@@ -88,8 +88,6 @@ body{
 		color: white;
 		font-weight: bold;
 		cursor:pointer;
-		padding-left: 10x;
-		padding-right: 10px;
 }
 	.window {
 		width: 560px;
@@ -104,7 +102,7 @@ body{
 		border-bottom: 2px solid #d6d8cd;
 		text-align: center;
 		font-size: 24px;
-}		
+}
 	.facebook{
 		background-image: url(../img/facebook.png);
 		width: 276px;
@@ -115,7 +113,6 @@ body{
 		display: block;
 		cursor:pointer;
   }
-
 	.ou {
 		text-align: center;
 		background-image: url(../img/ou.png);
@@ -168,7 +165,8 @@ body{
 }
 	.button_create {
 		display: block;
-		background-image: url(../img/create.png);
+    background: linear-gradient(to bottom, rgba(79,173,219,1) 0%,rgba(30,87,153,1) 100%,rgba(46,122,196,1) 100%);
+    /*background-image: url(../img/create.png);*/
 		width: 151px;
 		height: 37px;
 		margin: 15px auto;
@@ -176,7 +174,9 @@ body{
 		cursor:pointer;
 		color: white;
 		font-size: 15px;
-		font-weight: bold;
+		/*font-weight: bold;*/
+    border: none;
+    outline: none;
 }
 	.text_bottom {
 		width: 310px;
@@ -192,7 +192,7 @@ body{
 		border-collapse: collapse;
 		border-spacing: 0;
 	}
-			td, 
+			td,
 			tr {
 				margin: 0;
 				padding: 0px;
