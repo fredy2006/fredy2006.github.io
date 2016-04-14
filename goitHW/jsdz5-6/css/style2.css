@@ -1,0 +1,42 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+		font-family: arial, sans serif;
+	}
+.wrapper{
+  width: 800px;
+  margin: 30px auto;
+}
+
+span{
+  font-family: helvetica;
+  padding: 10px 30px;
+  border: 2px solid;
+  border-radius: 25px;
+  font-size: 100px;
+  font-weight: 900;
+}
+.buttonBox{
+  width: 308px;
+  margin: 20px auto;
+}
+a{
+  width: 100px;
+}
+p{
+  text-align: center;
+}
+.values{
+  margin: 0 0;
+  line-height: 50px;
+  text-align: center;
+  /*padding: 10px 30px;*/
+  /*border: 2px solid;*/
+  /*border-radius: 25px;*/
+  font-size: 50px;
+  color: #979797;
+  font-weight: bold;
+
+}

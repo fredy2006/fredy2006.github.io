@@ -1,0 +1,26 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+		font-family: arial, sans serif;
+	}
+.wrapper{
+  width: 800px;
+  margin: 30px auto;
+}
+
+span{
+  padding: 10px 30px;
+  border: 2px solid;
+  border-radius: 25px;
+  font-size: 100px;
+  font-weight: bold;
+}
+.buttonBox{
+  width: 300px;
+  margin: 20px auto;
+}
+a{
+  width: 100px;
+}
