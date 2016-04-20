@@ -1,0 +1,46 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+		font-family: arial, sans serif;
+		font-size: 12px;
+	}
+.wrapper{
+  width: 800px;
+  margin: 30px auto;
+}
+.formBox{
+	width: 70%;
+	margin: 30px auto;
+	border: 1px solid black;
+	border-radius: 5px;
+	position: relative;
+}
+label{
+	display: inline-block;
+	width: 100px;
+	margin: 10px auto 10px 4%;
+}
+span{
+	/*display: none;*/
+	display: inline-block;
+	width: 160px;
+	margin-left: 20px;
+	padding: 6px 15px;
+	font-size: 10px;
+	border: 1px solid #eee;
+	box-shadow: 0 0 4px rgba(0,0,0,0.5);
+}
+.noActive{
+	display: none;
+}
+.active{
+	display: inline-block;
+}
+
+button{
+	position: absolute;
+	left: 0px;
+	bottom: -21px;
+}
