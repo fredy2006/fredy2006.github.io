@@ -2,10 +2,10 @@ function changeClock(){
 var msecString = '000';
 
 if (msec == 0) {
-          msec++;
+          msec = msec + 7;
         } else {
-          msec++;
-          if (msec == 1000) {
+          msec = msec + 7;
+          if (msec >= 1000) {
             msec = 0;
             sec++;
             if (sec == 60) {
@@ -50,7 +50,7 @@ if (hour < 10) {
 }
 
 document.getElementById("myTimer").innerHTML = hourString+":"+minString+":"+secString+"."+msecString;
-timerId=setTimeout(changeClock,1);
+timerId=setTimeout(changeClock,7);
 }
 
 function clickStart(){

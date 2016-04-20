@@ -2,10 +2,11 @@ function changeClock(){
 var msecString = '000';
 
 if (msec == 0) {
-          msec++;
+          msec = msec + 13;
         } else {
-          msec++;
-          if (msec == 1000) {
+          msec = msec + 13;
+          // msec++;
+          if (msec >= 1000) {
             msec = 0;
             sec++;
             if (sec == 60) {
@@ -21,10 +22,8 @@ if (msec == 0) {
             }
           }
 }
-
-document.getElementById("myTimer").innerHTML = makeString(hour, min, sec, msec);
-
-timerId=setTimeout(changeClock,1);
+myTimer.innerHTML = makeString(hour, min, sec, msec);
+// timerId=setTimeout(changeClock,1);
 }
 
 function clickStart(){
@@ -32,20 +31,33 @@ if (!madeStart) {
   madeStart = true;
   flagPause = true;
   startButton[0].innerHTML = 'Stop';
-  changeClock();
+  // changeClock();
+  timerId = setInterval(changeClock,13);
+  console.log('первоначальный старт id=',timerId);
+  // clearInterval(timerId);
+  console.log('первоначальный старт после очистки id=',timerId);
 } else {
   if (flagPause) {
     flagPause = false;
     startButton[0].innerHTML = 'Start';
-    clearTimeout(timerId);
-    var element=document.createElement('p');
+    // var timerId = setInterval(changeClock, 10000);
+    console.log('когда должен остановиться перед очисткой id=',timerId);
+    clearInterval(timerId);
+    console.log('когда должен остановиться после очистки id=',timerId);
+    var element = document.createElement('p');
     element.classList.add('values');
     element.innerHTML='Stop ' + makeString(hour, min, sec, msec);
     dataBox.appendChild(element);
   } else {
     flagPause = true;
     startButton[0].innerHTML = 'Stop';
-    changeClock();
+    console.log('сейчас считаю после паузы id=',timerId);
+    // changeClock();
+    clearInterval(timerId);
+    console.log('сейчас считаю после паузы после очистки id=',timerId);
+    timerId=setInterval(changeClock,8);
+    console.log('сейчас считаю после паузы и уже id=',timerId);
+
   }
 }
 }
@@ -61,24 +73,25 @@ function clickStop(){
   madeStart = false;
   flagPause = false;
   startButton[0].innerHTML = 'Start';
-  clearTimeout(timerId);
+  console.log('под резет перед очисткой id=',timerId);
+  clearInterval(timerId);
+  console.log('под резет после очистки id=',timerId);
   msec = 0;
   sec = 0;
   min = 0;
   hour = 0;
-  document.getElementById("myTimer").innerHTML = '00:00:00.000';
+  myTimer.innerHTML = '00:00:00.000';
   }
 
 function clickSplit(){
   if (flagPause) {
-    clearTimeout(timerId);
     var element=document.createElement('p');
     element.classList.add('values');
     element.innerHTML='Split '+makeString(hour, min, sec, msec);
     dataBox.appendChild(element);
-    changeClock();
   }
 }
+
 function makeString(varHour, varMin, varSec, varMsec) {
   if (varMsec<10) {
     msecString = '00' + varMsec;
@@ -119,10 +132,12 @@ var minString = '00';
 var secString = '00';
 var msecString = '000';
 var timerId = 0;
+// console.log("timerId main body", timerId);
 var flagPause = false;
 var madeStart = false;
 var dataBox = document.querySelector('.dataBox');
 var startButton = document.querySelectorAll('a');
+var myTimer=document.getElementById("myTimer")
 
 startButton[0].addEventListener('click',clickStart)
 startButton[1].addEventListener('click',clickSplit)
