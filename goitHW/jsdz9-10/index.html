@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>JS9-10</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/cusel.css">
+
+        <!-- Shared assets -->
+        <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+
+        <!-- Example assets -->
+        <link rel="stylesheet" type="text/css" href="css/jcarousel.basic.css">
+
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+        <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+        <script type="text/javascript" src="js/jcarousel.basic.js"></script>
+
+        <script type="text/javascript" src="js/jquery.browser.js"></script>
+        <script type="text/javascript" src="js/cusel.js"></script>
+      	<script type="text/javascript" src="js/jScrollPane.js"></script>
+      	<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+
+        <script type="text/javascript" src="js/jquery.checkbox.js"></script>
+        <script type="text/javascript" src="js/jquery.color.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+
+    </head>
+    <body>
+
+        <div class="wrapper">
+
+<div class="menu">
+
+<ul>
+  <li>
+    <a href="">sometext1</a>
+    <ul class="submenu">
+      <li><a href="#">submenu text 1.1</a></li>
+      <li><a href="#">submenu text 1.2</a></li>
+      <li>
+        <a href="#">submenu text 1.3&nbsp;&nbsp;►</a>
+        <ul>
+          <li><a href="#">submenu text 1.3.1</a></li>
+          <li><a href="#">submenu text 1.3.2</a></li>
+          <li><a href="#">submenu text 1.3.3</a></li>
+          <li><a href="#">submenu text 1.3.4</a></li>
+        </ul>
+      </li>
+      <li><a href="#">submenu text 1.4</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="">sometext2</a>
+    <ul class="submenu">
+      <li><a href="#">submenutext 2.1</a></li>
+      <li><a href="#">submenutext 2.2</a></li>
+      <li><a href="#">submenutext 2.3</a></li>
+      <li><a href="#">submenutext 2.4</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="">sometext3</a>
+    <ul class="submenu">
+      <li><a href="#">submenutext 3.1</a></li>
+      <li><a href="#">submenutext 3.2</a></li>
+      <li><a href="#">submenutext 3.3</a></li>
+      <li><a href="#">submenutext 3.4</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="">sometext4</a>
+    <ul class="submenu">
+      <li><a href="#">submenutext 4.1</a></li>
+      <li><a href="#">submenutext 4.2</a></li>
+      <li><a href="#">submenutext 4.3</a></li>
+      <li><a href="#">submenutext 4.4</a></li>
+    </ul>
+  </li>
+</ul>
+</div>
+
+
+
+
+            <div class="jcarousel-wrapper">
+                <div class="jcarousel">
+                    <ul>
+                        <li><img src="img/img2.jpg" width="600" height="400" alt=""></li>
+                        <li><img src="img/img3.jpg" width="600" height="400" alt=""></li>
+                        <li><img src="img/img1.jpg" width="600" height="400" alt=""></li>
+                    </ul>
+                </div>
+
+
+                <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+                <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+
+                <p class="jcarousel-pagination"></p>
+            </div>
+
+            <div class="customSelect">
+
+            <div class="lineForm">
+              <label>Выберите страну</label>
+              <select class="sel80" id="country" name="country" tabindex="2">
+              <option value="1">Россия</option>
+              <option value="2">Украина</option>
+              <option value="3">Чехия</option>
+              <option value="4">Словакия</option>
+              <option value="5">Румыния</option>
+              <option value="6">Болгария</option>
+              <option value="7">Польша</option>
+              <option value="8">Германия</option>
+              <option value="9">Франция</option>
+              <option value="10">Англия</option>
+              <option value="11">Испания</option>
+              <option value="12">Объединенные Арабские Эмираты (ОАЭ)</option>
+              <option selected="selected" value="1000">Выберите страну...</option>
+              </select>
+            </div>
+          </div>
+          <div class="customCheckBox">
+            <p>Custom jQuery Checkbox</p>
+            <div class="jQueryCheckBox1">
+              <span class="niceCheck"><input type="checkbox" name="ch1" id="jQueryCheckBox1"></span>
+              <!-- <label for="jQueryCheckBox1">Чекбокс jQuery 1:</label> -->
+            </div>
+            <div class="jQueryCheckBox1">
+              <span class="niceCheck"><input type="checkbox" name="ch1" id="jQueryCheckBox2"></span>
+              <!-- <label for="jQueryCheckBox2">Чекбокс jQuery 2:</label> -->
+            </div>
+
+          </div>
+          <div class="cssCheckBox">
+            <p>Custom CSS Checkbox</p>
+            <div class="cssCheckBox1">
+              <input type="checkbox" id="test-check1">
+              <label for="test-check1">Чекбокс 1:</label>
+            </div>
+            <div class="cssCheckBox2">
+              <input type="checkbox" id="test-check2">
+              <label for="test-check2">Чекбокс 2:</label>
+            </div>
+          </div>
+        </div>
+
+    </body>
+</html>
