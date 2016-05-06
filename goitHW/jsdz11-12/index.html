@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>dzJs 11-12</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="js/carusel.js"></script>
+  <script type="text/javascript" src="js/tmpl.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+
+</head>
+<body>
+<div class="wrapper">
+  <div class="templateCode">
+    <script type="text/template" id="templateText">
+      <% for (var i=0; i < data.length; i++) { %>
+      <h2><%= data[i].title %></h2>
+      <p><%= data[i].content %></p>
+      <%};%>
+    </script>
+  </div>
+
+  <div class="carousel-arrow-left">
+    <img src="img/left.png">
+  </div>
+  <div class="carousel-hider">
+    <ul class="carousel-list">
+      <li class="carousel-element"><img src="img/1.jpg"><p>Фото 1</p></li>
+      <li class="carousel-element"><img src="img/2.jpg"><p>Фото 2</p></li>
+      <li class="carousel-element"><img src="img/3.jpg"><p>Фото 3</p></li>
+      <li class="carousel-element"><img src="img/4.jpg"><p>Фото 4</p></li>
+      <li class="carousel-element"><img src="img/5.jpg"><p>Фото 5</p></li>
+    </ul>
+  </div>
+  <div class="carousel-arrow-right">
+    <img src="img/right.png">
+  </div>
+</div>
+<h1>Паращевин Константин</h1>
+<img class="facePhoto" src="img/photo.jpg">
+
+
+</body>
+</html>
