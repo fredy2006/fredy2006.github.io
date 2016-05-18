@@ -1,0 +1,86 @@
+body {
+	font-family: arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f6f6f6;
+}
+h2 {
+	font-weight: normal;
+	text-align: center;
+	margin-bottom: 50px;
+}
+.container {
+	margin: 0 auto;
+	width: 30%;
+}
+ul {
+	list-style: none;
+}
+
+ul li input[type="radio"]{
+  	margin: 3px 3px 0 5px;
+  	display: inline-block;
+  	width: 28px;
+}
+ol {
+	margin: 0 auto;
+	display: block;
+	width: 30%;
+}
+.checkbox{
+  margin: 3px 3px 0px 5px;
+}
+button {
+	display: block;
+	margin: 20px auto;
+	width: 300px;
+	height: 50px;
+	background-color: #b1dbe1;
+	border: 2px solid black;
+	font-family: arial , sans-serif;
+	font-size: 18px;
+	cursor: pointer;
+}
+.check {
+	display: none;
+}
+.modal_window {
+	display: none;
+	height: 300px;
+	width: 500px;
+	top: 50%;
+	left: 50%;
+	margin-top: -150px;
+	margin-left: -250px;
+	position: fixed;
+	z-index: 5;
+	border: 2px solid black;
+	border-radius: 5px;
+	background-color: white;
+	opacity: 0;
+}
+.modal_text {
+  position: absolute;
+  top: 75px;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  display: block;
+}
+.modal_button {
+  position: absolute;
+  margin: 200px 100px 0px;
+}
+.overlay {
+	display: none;
+	background-color: black;
+	opacity: 0.7;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	z-index: 1;
+}

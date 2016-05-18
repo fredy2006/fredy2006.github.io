@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>JS13-14</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src='http://code.jquery.com/jquery-latest.js'></script>
+  <script src="js/tmpl.js"></script>
+  <script src="js/script.js"></script>
+ </head>
+<body>
+<div class="wrapper">
+  <button class="show_test">Начать тест</button>
+  <div class="templateCode">
+    <script type="text/tamplate" id="test">
+    <div class="container">
+
+    <% for (var i = 0; i < data.length; i++) { %>
+
+    	<h3><%= data[i].question %></h3>
+
+    	<ul>
+    	<% for (var j = 0; j < data[i].answer.length; j++) { %>
+        <li><input type="radio" name="<%= data[i].name %>" class="checkbox" value="<%= data[i].check[j] %>"><%= data[i].answer[j] %></li>
+        <% }; %>
+    	</ul>
+
+    <% }; %>
+    </div>
+    </script>
+  </div>
+  <button class="check">Проверить мои результаты</button>
+  <div class="modal_window">
+  	<p class="modal_text"></p>
+  	<button class="modal_button">OK</button>
+  </div>
+  <div class="overlay">
+  </div>
+  <!-- <li><input type="radio" name="<%= data[i].name %>" class="checkbox" value="<%= data[i].check[j] %>"><%= data[i].answer[j] %></li> -->
+
+</div>
+</body>
+</html>
