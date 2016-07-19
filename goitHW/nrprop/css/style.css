@@ -1,0 +1,210 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+		font-family: arial, sans serif;
+		background: url(../img/myfon500leonardo.jpg) repeat;
+}
+
+.topLine{
+	padding: 14px 0px;
+	background: linear-gradient(to bottom,#6fa5ce 0%,#113756 100%);
+}
+
+.wrapper{
+  width: 900px;
+  margin: 0px auto;
+	position: relative;
+}
+
+
+.customSelect{
+	width: 800px;
+	margin: 20px auto;
+}
+
+/*style for menu*/
+.menu{
+	height:30px;
+	width: 100%;
+	margin-top: -28px;
+	/*background: #e39000;*/
+	/*background: linear-gradient(to bottom, #4d5663 0%,#2d3236 11%,#050506 90%,#010101 100%);*/
+	/*background: linear-gradient(to bottom, #1c548c 0%,#7db9e8 100%);*/
+	background: linear-gradient(to bottom,#6fa5ce 0%,#113756 100%);
+}
+.menu ul li{
+	float: left;
+	padding: 6px 30px;
+	border-right: 1px solid #eee;
+	position: relative;
+	z-index: 50;
+}
+
+.menu ul li hover{
+	/*background: #6fa5ce;*/
+}
+
+.menu ul li a{
+	text-decoration: none;
+	color: #bbc5c8;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+.menu ul li a:hover{
+	text-decoration: underline;
+	/*background: #6fa5ce;*/
+	color: white;
+	z-index: 51;
+}
+.menu ul ul{
+	background: #113756;
+	font-size: 15px;
+	width: 600px;
+	/*border: 1px solid #eee;*/
+	position: absolute;
+	top: 30px;
+	/*left: -1px;*/
+	left: 0px;
+	display: none;
+	/*background-color:#0CF;*/
+
+}
+.menu ul ul li{
+	/*float: none;*/
+	float: left;
+	border-right: none;
+	/*border-bottom: 1px solid #eee;*/
+	border-right: 1px dashed #eee;
+	padding: 6px 10px;
+}
+
+.menu ul ul li a{
+	color: white;
+}
+
+.menu ul ul li:last-child{
+	border-bottom: none;
+	border-right: none;
+}
+.backgroundForSubmenu{
+	background: #113756;
+	width: 100%;
+	padding-top: 14px;
+	padding-bottom: 13px;
+}
+.searchLine{
+	position: absolute;
+	top: 4px;
+	right: 50px;
+}
+.searchLine img{
+	position: absolute;
+	top: 1px;
+	right: 0px;
+}
+#searchText{
+	color: black;
+
+	/*background-image: url(../img/lupa30.jpg);
+	background-repeat: no-repeat;
+	background-position: 2% 5%;*/
+}
+
+.topLogo{
+	position: absolute;
+	top: 30px;
+	left: 0px;
+	margin: 20px auto 12px;
+	padding: 15px 0px 30px 0px;
+	width: 350px;
+}
+#bottomLine{
+	background: linear-gradient(to bottom,#113756 0%,#6fa5ce 100%);
+	padding: 15px 0px
+}
+.bottomText{
+	width: 500px;
+	margin: 0px auto;
+	color: #fff;
+	text-align: center;
+}
+.buttomSection{
+	width: 900px;
+	margin: 0px auto;
+	background: #fff5e1;
+	color: #113756;
+	border-left: 1px solid #c9c9c9;
+	border-right: 1px solid #c9c9c9;
+}
+
+.centerMenu ul li{
+display: inline-block;
+width: 33%;
+text-align: center;
+padding-top: 10px;
+padding-bottom: 10px;
+color: #fff;
+}
+.centerMenu ul li a{
+	color: #113756;
+}
+.centerMenu ul li:hover{
+	/*background: linear-gradient(to bottom,#113756 0%,#6fa5ce 100%);*/
+	background: linear-gradient(to bottom, #ffca60 0%,#fff5e1 100%);
+}
+.bottomArticle{
+	width: 900px;
+	margin: 0px auto;
+	position: relative;
+	background: #fff5e1;
+	display: block;
+	height: 120px;
+	border-left: 1px solid #7f7f7f;
+	border-right: 1px solid #7f7f7f;
+}
+.bottomArticle p{
+	padding: 10px 30px;
+}
+.leftColumn{
+	width: 33%;
+	float: left;
+	font-size: 15px;
+	text-align: justify;
+	padding: 0px 0px;
+}
+/*.leftColumn::after{
+	content: '';
+	clear: both;
+	display: block;
+}*/
+.centerColumn{
+	width: 33%;
+	float: left;
+	padding: 0px 0px;
+	font-size: 15px;
+	text-align: justify;
+}
+
+.rightColumn{
+	width: 33%;
+	float: left;
+	padding: 0px 0px;
+	font-size: 15px;
+	text-align: justify;
+}
+.lastString{
+	width: 900px;
+	margin: 0px auto;
+	position: relative;
+	background: #fff5e1;
+	display: block;
+	font-size: 10px;
+	text-align: center;
+	border: 1px solid #7f7f7f;
+	border-top: none;
+	padding: 10px 0px 5px 0px;
+	/*height: 120px;*/
+
+}
