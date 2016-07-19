@@ -121,8 +121,8 @@ body {
 	width: 350px;
 }
 #bottomLine{
-	/*width: 900px;
-	margin: 0px auto;*/
+	width: 900px;
+	margin: 0px auto;
 	background: linear-gradient(to bottom,#113756 0%,#6fa5ce 100%);
 	padding: 15px 0px
 }
