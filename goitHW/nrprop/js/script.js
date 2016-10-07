@@ -2,9 +2,11 @@ $(document).ready(function(){
 
 console.log('Hello');
 $('#slideshowHolder').jqFancyTransitions({ width: 900, height: 300, delay: 2000, effect: 'zipper', strips: 50 });
-$('a').on('click', function(e){
-  e.preventDefault();
-});
+// перехватывание клика
+// $('a').on('click', function(e){
+//   e.preventDefault();
+// });
+// конец перехватывания клика
 
 $('.menu ul li').hover(
     function () {
