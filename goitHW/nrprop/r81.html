@@ -4,12 +4,14 @@
         <meta charset="utf-8">
         <title>NRProp. Aircraft Composite Propellers</title>
         <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/product_paroplane.css">
+        <!-- <link rel="stylesheet" href="fancybox/jquery.fancybox.css" type="text/css" media="screen" /> -->
+        <link rel="stylesheet" href="css/product_single.css">
         <!-- <link rel="stylesheet" href="css/cusel.css"> -->
         <!-- <link rel="stylesheet" type="text/css" href="css/jcarousel.basic.css"> -->
 
-        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-
+        <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script> -->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+        <!-- <script type="text/javascript" src="fancybox/jquery.fancybox.pack.js"></script> -->
         <script src="js/jqFancyTransitions.1.8.min.js" type="text/javascript"></script>
         <script type="text/javascript" src="js/script.js"></script>
 
@@ -78,11 +80,13 @@
         <div class='topLine' id='bottomLine'>
           <div class="crumbs">
             <p>
-              <a href="index2.html">Home</a><span>»</span><a href="product.html">Product</a><span>»</span><a href="product_paroplane.html">Paroplane Propellers</a><span>»</span><a href="">Diameter 1700-1800mm</a>
+              <a href="index2.html">Home</a><span>»</span><a href="product.html">Product</a><span>»</span><a href="product_paroplane.html">Paroplane Propellers</a><span>»</span><a href="product_paroplane17001800.html">Diameter 1701-1800<span>»</span><a href="#">R81/L82</a>
             </p>
           </div>
         </div>
         <div class="bottomArticleProduct">
+<div class="container">
+
         <div class="leftMenu">
           <p class="menuTitle">
             Diametr (mm):
@@ -91,7 +95,7 @@
             <li><a href="product_paroplane1200.html"> < 1200</a></li>
             <li><a href="product_paroplane12001400.html">1200 - 1400</a></li>
             <li><a href="product_paroplane14001700.html">1401 - 1700</a></li>
-            <li><a href="#">1701 - 1800</a></li>
+            <li><a href="product_paroplane17001800.html">1701 - 1800</a></li>
             <li><a href="product_paroplane1800.html">> 1800</a></li>
           </ul>
           <p class="menuTitle">
@@ -116,61 +120,60 @@
           </ul>
         </div>
         <div class="rightData">
-          <div class="smallModel">
-            <a href="r64.html">
-              <p id="smallModelTitle">R64/L64</p>
-              <p>Right/Left Hand Rotation</p>
-              <p>Diametr 1710mm;</p>
-              <p>Engine power 60-80 hp;</p>
-              <p>Number of propeller blades: 2-4</p>
-              <img src="img/64l3130.png" alt="" />
-            </a>
+          <div class="rightDataPhoto">
+            <p>
+              <!-- <a id="single_1" href="img/64r4600.jpg" title="Bos 3 (p.vanhaastrecht)"><img src="img/64r4400.jpg" alt="" /></a> -->
+              <!-- <img id="single_1" src="img/64r4400.jpg" alt="Large image"> -->
+              <img id="largeImg" src="img/81r4400.jpg" alt="Large image">
+            </p>
+            <ul id="thumbs">
+              <li><a href="img/81r4400.jpg" title="4 blades propeller R81"><img src="img/81r4100.jpg"></a></li>
+              <li><a href="img/81r3400.jpg" title="3 blades propeller R81"><img src="img/81r3100.jpg"></a></li>
+              <li><a href="img/81r2400.jpg" title="2 blades propeller R81"><img src="img/81r2100.jpg"></a></li>
+              <li><a href="img/l64400.jpg" title="Propeller R64"><img src="img/l64100.jpg"></a></li>
+            </ul>
           </div>
-          <div class="smallModel">
-            <a href="r81.html">
-              <p id="smallModelTitle">R81/L82</p>
-              <p>Right/Left Hand Rotation</p>
-              <p>Diametr 1750/1730mm;</p>
-              <p>Engine power 60-80 hp;</p>
-              <p>Number of propeller blades: 2-4</p>
-              <img src="img/l42mal.jpg" alt="" />
-            </a>
-          </div>
-          <div class="smallModel">
-            <a href="r83.html">
-              <p id="smallModelTitle">R83/L83</p>
-              <p>Right/Left Hand Rotation</p>
-              <p>Diametr 1700mm;.</p>
-              <p>Engine power 80-90 hp;</p>
-              <p>Number of propeller blades: 2-4</p>
-              <p>Swept Blade Propeller</p>
-              <img src="img/83r3130.png" alt="" />
-            </a>
-          </div>
-          <div class="smallModel">
-            <a href="r104.html">
-              <p id="smallModelTitle">R104/L104</p>
-              <p>Right/Left Hand Rotation</p>
-              <p>Diametr 1750mm;</p>
-              <p>Engine power 90-115 hp;</p>
-              <p>Number of propeller blades: 2-4</p>
-              <p>Color: black or white</p>
-              <img src="img/l42mal.jpg" alt="" />
-            </a>
-          </div>
-          <div class="smallModel">
-            <a href="r106.html">
-              <p id="smallModelTitle">R106/L106</p>
-              <p>Right/Left Hand Rotation</p>
-              <p>Diametr 1750mm;</p>
-              <p>Engine power 90-115 hp;</p>
-              <p>Number of propeller blades: 2-4</p>
-              <p>Swept Blade Propeller</p>
-              <img src="img/l42mal.jpg" alt="" />
-            </a>
+          <div class="rightDataText">
+            <p id="rightDataTextTitle">
+              R81/L82
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <div class="table">
+              <div id="specs">
+                Specs:
+              </div>
+              <div class="odd">
+                Engine power: 60-80 hp
+              </div>
+              <div class="even">
+                Propeller diameter: 1750/1730 mm
+              </div>
+              <div class="odd">
+                Number of propeller blades: 2-4
+              </div>
+              <div class="even">
+                Color: black or white
+              </div>
+              <div class="odd">
+                Number of propeller blades: 2-4
+              </div>
+              <div class="even">
+                Color: black or white
+              </div>
+              <div class="odd">
+                Number of propeller blades: 2-4
+              </div>
+              <div class="even">
+                Color: black or white
+              </div>
+            </div>
           </div>
 
         </div>
+</div>
         </div>
         <div class="lastString">
           <p>
