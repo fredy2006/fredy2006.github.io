@@ -210,9 +210,9 @@ color: #fff;
 .bottomArticle p{
 	padding: 10px 30px;
 }
-.bottomArticleProduct p{
+/*.bottomArticleProduct p{
 	padding: 0px 30px 0px 30px;
-}
+}*/
 .container::after{
   content: "";
   clear: both;
@@ -291,31 +291,85 @@ color: #fff;
 	-webkit-transition-duration: 2s;
 	-webkit-transition-timing-function: ease;*/
 }
-.smallModel:hover{
-	box-shadow: 0 0 10px rgba(0,0,0,0.5);
-	-moz-transform: scale(1.05, 1.05); /* Для Firefox */
-	-ms-transform: scale(1.05, 1.05); /* Для IE */
-	-webkit-transform: scale(1.05, 1.05); /* Для Safari, Chrome, iOS */
-	-o-transform: scale(1.05, 1.05); /* Для Opera */
-	transition-duration: 0.5s;
-	transform: scale(1.05, 1.05);
+.rightDataPhoto{
+  float: left;
+  color:grey;
+  width: 350px;
+  padding: 15px 5px 5px 5px;
 }
-.smallModel a{
-	text-decoration: none;
-	color: #5f605f;
+.rightDataPhoto p{
+  height: 290px;
 }
-.rightData .smallModel p{
-	padding: 0px 3px 0px 8px;
-	/*text-align: justify;*/
+/*.rightDataPhoto::after{
+  content: "";
+  clear: both;
+  display: block;
+}*/
+
+#largeImg {
+/*#single_1 {*/
+  border: solid 1px #ccc;
+  width: 330px;
+  /*height: 400px;*/
+  padding: 5px;
 }
-.rightData .smallModel img{
-	margin: 4px 10px;
+#thumbs a {
+  border: solid 1px #ccc;
+  width: 100px;
+  height: 75px;
+  padding: 3px;
+  margin: 2px;
+  float: left;
 }
-#smallModelTitle{
-	padding-top: 5px;
-	padding-bottom: 5px;
-	text-align: center;
-	font-size: 18px;
+
+#thumbs a:hover {
+  border-color: #FF9900;
+}
+
+#thumbs li {
+  list-style: none;
+}
+
+#thumbs {
+  margin: 0;
+  padding: 0;
+}
+.rightDataText{
+  display: inline-block;
+  padding-top: 10px;
+  margin: 0px auto;
+  width: 45%;
+
+  /*float: right;*/
+}
+#rightDataTextTitle{
+  padding: 5px 5px 5px 5px;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+}
+.rightDataText p{
+  padding: 5px 10px 5px 5px;
+  text-align: justify;
+  font-family: "ArimoRegular";
+  font-size: 14px;
+}
+.table{
+  margin-bottom: 20px;
+}
+.table .odd{
+  padding: 3px 0px;
+  background: #ececec;
+}
+.table .even{
+  padding: 3px 0px;
+  background: white;
+}
+#specs{
+  border-bottom: solid 1px black;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  /*width: 100%;*/
 }
 .lastString{
 	width: 900px;

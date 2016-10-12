@@ -238,6 +238,7 @@ color: #fff;
 	background: linear-gradient(to right, #91ceea 0%,#c2dce8 30%,#c2dce8 70%,#91ceea 100%);
 	font-family: 'ArimoBold', Arial;
 }
+
 .leftMenu ul{
 	padding: 0px 0px 0px 0px;
 }
@@ -263,6 +264,7 @@ color: #fff;
 }
 
 .rightData {
+  /*float: left;*/
 	display: inline-block;
 	width: 75%;
 	margin: 0px auto;
@@ -273,11 +275,13 @@ color: #fff;
 	font-family: 'ArimoBold', Arial;
 	font-size: 13px;
 }
-.rightData::after{
+
+/*.rightData::after{
   content: "";
   clear: left;
-  /*display: block;*/
-}
+  display: block;
+}*/
+
 .smallModel{
 	display: inline-block;
 	width: 150px;
@@ -336,7 +340,7 @@ color: #fff;
 	height: 150px;
 }
 .crumbs{
-	width: 90%;
+	width: 500px;
 	margin: 0px 0px 0px 30px;
 	color: #bbc5c8;
 	text-align: left;
