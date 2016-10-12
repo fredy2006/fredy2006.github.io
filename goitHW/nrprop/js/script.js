@@ -1,6 +1,8 @@
 $(document).ready(function(){
 
 console.log('Hello');
+
+// $(".fancybox").fancybox();
 $('#slideshowHolder').jqFancyTransitions({ width: 900, height: 300, delay: 2000, effect: 'zipper', strips: 50 });
 // перехватывание клика
 // $('a').on('click', function(e){
@@ -22,36 +24,41 @@ $('.menu ul li').hover(
     }
 );
 
+// Reload img from preview
+// var largeImg = document.getElementById('single_1');
+var largeImg = document.getElementById('largeImg');
 
-    // animated color
-    // jQuery(".menu ul ul").mouseenter(
-    //   function () {
-    //     jQuery(this).animate({
-    //         backgroundColor:"#03C",
-    //     }, 500 );
-    // });
-    //
-    // jQuery(".menu ul ul").mouseleave(function() {
-    //     jQuery(this).animate({
-    //         backgroundColor:"#0CF",
-    //     }, 500 );
-    // });
-    //
-    // end of animated color
+document.getElementById('thumbs').onclick = function(e) {
+  var target = e.target;
 
+  while (target != this) {
 
-// end of activation and deactivation submenu second level
-// $('a').on('click', function(e){
-//   e.preventDefault();
-// });
+    if (target.nodeName == 'A') {
+      showThumbnail(target.href, target.title);
+      return false;
+    }
+
+    target = target.parentNode;
+  }
+
+}
+
+function showThumbnail(href, title) {
+  largeImg.src = href;
+  largeImg.alt = title;
+}
+// end of Reload img from preview
+// fancybox
+// console.log('Did FancyBox');
 //
-// $('.menu ul li').hover(function () {
-//    clearTimeout($.data(this,'timer'));
-//    $('ul',this).stop(true,true).slideDown(200);
-// }, function () {
-//   $.data(this,'timer', setTimeout($.proxy(function() {
-//     $('ul',this).stop(true,true).slideUp(200);
-//   }, this), 100));
-// });
+// $("#single_1").fancybox({
+//       helpers: {
+//           title : {
+//               type : 'float'
+//           }
+//       }
+//   });
+
+// end of FancyBox
 
 })
