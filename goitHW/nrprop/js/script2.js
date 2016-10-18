@@ -15,13 +15,6 @@ $("a#single_image").fancybox({
     'overlayShow'   :   false,
     'padding'       :   0,
 });
-// $("a#single_image").fancybox();
-// перехватывание клика
-// $('a').on('click', function(e){
-//   e.preventDefault();
-// });
-// конец перехватывания клика
-
 $('.menu ul li').hover(
     function () {
       clearTimeout($.data(this,'timer'));
@@ -34,29 +27,6 @@ $('.menu ul li').hover(
     }
 );
 
-// Reload img from preview
-// var largeImg = document.getElementById('single_1');
-var largeImg = document.getElementById('largeImg');
-console.log('largeImg',largeImg);
-document.getElementById('thumbs').onclick = function(e) {
-  var target = e.target;
 
-  while (target != this) {
-
-    if (target.nodeName == 'A') {
-      showThumbnail(target.href, target.title);
-      return false;
-    }
-
-    target = target.parentNode;
-  }
-
-}
-
-function showThumbnail(href, title) {
-
-  largeImg.src = href;
-  largeImg.alt = title;
-}
 
 })
