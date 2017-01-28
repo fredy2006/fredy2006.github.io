@@ -281,6 +281,7 @@ color: #fff;
 .smallModel{
 	display: inline-block;
 	width: 150px;
+  /*height: 250px;*/
 	background-color: white;
 	border: solid 1px #9f9f9f;
 	border-radius: 4px;
@@ -290,6 +291,9 @@ color: #fff;
 	/*-webkit-transition-property: scale;
 	-webkit-transition-duration: 2s;
 	-webkit-transition-timing-function: ease;*/
+}
+.emptyLine{
+  color: #fff;
 }
 .smallModel:hover{
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);

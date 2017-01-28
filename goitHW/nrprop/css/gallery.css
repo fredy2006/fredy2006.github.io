@@ -266,7 +266,7 @@ color: #fff;
 	display: inline-block;
 	width: 75%;
 	margin: 0px auto;
-	padding: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 4px;
 	border: solid 1px black;
 	border-radius: 5px;
 	background-color: #fff5e1;
@@ -280,7 +280,7 @@ color: #fff;
 }
 .smallModel{
 	display: inline-block;
-	width: 24%;
+	width: 32%;
 	background-color: white;
 	border: solid 1px #9f9f9f;
 	border-radius: 4px;
@@ -305,7 +305,7 @@ color: #fff;
 	color: #5f605f;
 }
 .rightData .smallModel p{
-	padding: 0px 3px 0px 8px;
+	padding: 0px 0px 0px 0px;
 	text-align: center;
 }
 .rightData .smallModel img{
