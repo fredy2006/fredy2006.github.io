@@ -234,7 +234,7 @@ color: #fff;
 .leftMenu{
 	float: left;
 	width: 20%;
-	margin: 10px 20px 10px 15px;
+	margin: 0px 20px 10px 15px;
 	background: linear-gradient(to right, #91ceea 0%,#c2dce8 30%,#c2dce8 70%,#91ceea 100%);
 	font-family: 'ArimoBold', Arial;
 }
@@ -408,3 +408,40 @@ color: #fff;
 	padding: 0px 5px;
 }
 /*	end of style for Product.html*/
+
+/*begin news blockquote*/
+.news{
+	display: inline-block;
+	width: 170px;
+  /*height: 250px;*/
+	background-color: white;
+	border: solid 1px #9f9f9f;
+	border-radius: 4px;
+	margin: 4px 4px;
+  font-family: "ArimoItalic";
+  font-size: 12px;
+}
+.news a{
+	text-decoration: none;
+	color: #5f605f;
+}
+.leftMenu .news p{
+	padding: 0px 3px 0px 8px;
+	text-align: justify;
+}
+.leftMenu .news img{
+	margin: 4px 10px;
+}
+.bottomArticleProduct .leftMenu .news p{
+	margin: 0px 0px 0px 0px;
+	padding: 2px 4px 2px 4px;
+	font-size: 14px;
+}
+
+.news #smallModelTitle{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: right;
+	font-size: 18px;
+}
+/*end news block*/

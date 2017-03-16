@@ -354,3 +354,39 @@ color: #fff;
 	padding: 0px 5px;
 }
 /*	end of style for Product.html*/
+
+/*begin news blockquote*/
+.news{
+	display: inline-block;
+	width: 170px;
+	background-color: white;
+	border: solid 1px #9f9f9f;
+	border-radius: 4px;
+	margin: 4px 4px;
+  font-family: "ArimoItalic";
+  font-size: 12px;
+}
+.news a{
+	text-decoration: none;
+	color: #5f605f;
+}
+.leftMenu .news p{
+	padding: 0px 3px 0px 8px;
+	text-align: justify;
+}
+.leftMenu .news img{
+	margin: 4px 9px;
+}
+.bottomArticleProduct .leftMenu .news p{
+	margin: 0px 0px 0px 0px;
+	padding: 2px 4px 2px 4px;
+	font-size: 14px;
+}
+
+.news #smallModelTitle{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: right;
+	font-size: 18px;
+}
+/*end news block*/

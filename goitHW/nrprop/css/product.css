@@ -182,11 +182,11 @@ color: #fff;
 	padding: 0px 0px;
 }
 .allColumnProduct{
-	width: 31%;
+	width: 24%;
 	float: left;
 	font-size: 15px;
 	text-align: justify;
-	margin: 0px 10px;
+	margin: 0px 3px;
 	padding: 5px 0px 10px 0px;
 }
 .allColumnProduct a{
@@ -200,7 +200,7 @@ color: #fff;
 	text-align: center;
 }
 .allColumnProduct img{
-	margin: 5px 38px;
+	margin: 5px 10px;
 	border-radius: 8px;
 
 }
