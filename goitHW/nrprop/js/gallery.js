@@ -6,7 +6,7 @@ console.log('Hello');
 // $('.fancybox').fancybox();
 
 // $(".fancybox").fancybox();
-$('#slideshowHolder').jqFancyTransitions({ width: 900, height: 300, delay: 2000, effect: 'zipper', strips: 50 });
+$('#slideshowHolder').jqFancyTransitions({ width: 900, height: 150, delay: 2000, effect: 'zipper', strips: 50 });
 // $("a#single_image").fancybox({
 //     'transitionIn'  :   'elastic',
 //     'transitionOut' :   'elastic',
