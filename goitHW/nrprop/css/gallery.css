@@ -353,6 +353,29 @@ color: #fff;
 .crumbs span{
 	padding: 0px 5px;
 }
+.navigation{
+	width: 90%;
+	margin: 10px 0px 5px 30px;
+	color: #000;
+	text-align: center;
+}
+.navigation a{
+  padding: 5px 10px 5px 10px;
+  color: #000;
+	text-decoration: none;
+}
+.navigation a:hover{
+	text-decoration: underline;
+	/*color: #fff;*/
+
+}
+.navigation span{
+	padding: 0px 5px;
+}
+.navigation .active{
+  background-color: #fe842e;
+}
+
 /*	end of style for Product.html*/
 
 /*begin news blockquote*/
