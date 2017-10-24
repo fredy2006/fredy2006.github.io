@@ -451,7 +451,7 @@ display: inline-block;
 .news #smallModelTitle{
 	padding-top: 5px;
 	padding-bottom: 5px;
-	text-align: right;
+	text-align: center;
 	font-size: 18px;
 }
 /*end news block*/
