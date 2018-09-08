@@ -105,6 +105,9 @@ body {
 	display: none;
 
 }
+#shortMenu {
+  width: 400px;
+}
 .menu ul ul li{
 	float: left;
 	border-right: none;
@@ -300,18 +303,14 @@ color: #fff;
 .rightDataPhoto p{
   height: 290px;
 }
-/*.rightDataPhoto::after{
-  content: "";
-  clear: both;
-  display: block;
-}*/
 
 #largeImg {
-/*#single_1 {*/
   border: solid 1px #ccc;
   width: 330px;
-  /*height: 400px;*/
   padding: 5px;
+}
+#largeImg:hover{
+cursor: zoom-in;
 }
 #thumbs a {
   border: solid 1px #ccc;
@@ -353,6 +352,7 @@ color: #fff;
   text-align: justify;
   font-family: "ArimoRegular";
   font-size: 14px;
+  text-indent: 20px;
 }
 .table{
   margin-bottom: 20px;
@@ -436,6 +436,7 @@ color: #fff;
 	margin: 0px 0px 0px 0px;
 	padding: 2px 4px 2px 4px;
 	font-size: 14px;
+  text-indent: 15px;
 }
 
 .news #smallModelTitle{

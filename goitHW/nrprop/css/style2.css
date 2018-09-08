@@ -1,10 +1,50 @@
+@font-face {
+    font-family: "ArimoRegular";
+    src: url("../fonts/ArimoRegular/ArimoRegular.eot");
+    src: url("../fonts/ArimoRegular/ArimoRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/ArimoRegular/ArimoRegular.woff") format("woff"),
+    url("../fonts/ArimoRegular/ArimoRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "ArimoBold"; */
+@font-face {
+    font-family: "ArimoBold";
+    src: url("../fonts/ArimoBold/ArimoBold.eot");
+    src: url("../fonts/ArimoBold/ArimoBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/ArimoBold/ArimoBold.woff") format("woff"),
+    url("../fonts/ArimoBold/ArimoBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "ArimoBoldItalic"; */
+@font-face {
+    font-family: "ArimoBoldItalic";
+    src: url("../fonts/ArimoBoldItalic/ArimoBoldItalic.eot");
+    src: url("../fonts/ArimoBoldItalic/ArimoBoldItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/ArimoBoldItalic/ArimoBoldItalic.woff") format("woff"),
+    url("../fonts/ArimoBoldItalic/ArimoBoldItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "ArimoItalic"; */
+@font-face {
+    font-family: "ArimoItalic";
+    src: url("../fonts/ArimoItalic/ArimoItalic.eot");
+    src: url("../fonts/ArimoItalic/ArimoItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/ArimoItalic/ArimoItalic.woff") format("woff"),
+    url("../fonts/ArimoItalic/ArimoItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
 * {
 	margin: 0px;
 	padding: 0px;
 }
 
 body {
-		font-family: arial, sans serif;
+		font-family: ArimoRegular;
+		/*font-family: ArimoRegular, arial, sans-serif;*/
 		background: url(../img/myfon500leonardo2.jpg) repeat;
 }
 
@@ -55,6 +95,9 @@ body {
 	/*background: #6fa5ce;*/
 	color: white;
 	z-index: 51;
+}
+#shortMenu {
+  width: 400px;
 }
 .menu ul ul{
 	background: #113756;
@@ -109,6 +152,12 @@ body {
 	padding: 15px 0px 30px 0px;
 	width: 350px;
 }
+.nrpropChampionship{
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
+
 #bottomLine{
 	width: 900px;
 	margin: 0px auto;
@@ -122,6 +171,7 @@ body {
 	margin: 0px auto;
 	color: #fff;
 	text-align: center;
+	font-family:
 }
 .buttomSection{
 	width: 900px;
